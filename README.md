@@ -1,1 +1,0 @@
-Bash project, shell basics
