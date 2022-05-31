@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -minepth 1 -type d | wc -I
