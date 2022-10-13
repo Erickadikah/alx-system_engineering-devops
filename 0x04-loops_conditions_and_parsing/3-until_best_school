@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#this bash script prints 10 = best school and 1 hi
 until [ "$counter" -gt 10 ];
 do
 	if [ "$counter" = 9 ];
