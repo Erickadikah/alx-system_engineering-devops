@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+i=0
+while ((i < 11))
+do
+	if ((i == 4));
+	then
+		echo "bad luck"
+	elif ((i == 8));
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	((i++))
+done
