@@ -1,3 +1,10 @@
 #!/usr/bin/env bash
-counter=0
-
+until [ "$counter" -gt 10 ];
+do
+	if [ "$counter" = 9 ];
+	then
+		echo 'Hi'
+	fi
+	echo "$counter" 'Best School'
+	((counter++))
+done
