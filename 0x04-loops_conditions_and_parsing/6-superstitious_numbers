@@ -5,7 +5,6 @@
 # "bad luck from italy" for the 17th loop iteration
 
 count=1
-
 while [ $count -le 20 ]
 do
 	echo "$count"
