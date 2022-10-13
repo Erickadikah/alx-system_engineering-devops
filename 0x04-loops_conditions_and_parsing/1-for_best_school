@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#this function prints best school 10 times
 counter=0
 for (( i = 0; i< 10; i++ )); do
 	echo "Best school"
