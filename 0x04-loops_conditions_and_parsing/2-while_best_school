@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-counter=0
+#this bash script dispplays best school
+#ten times using a while loop.
 while [ $counter -lt 10 ];
 do
-	echo "Best school"
+	echo "Best School"
 	((counter++))
 done
