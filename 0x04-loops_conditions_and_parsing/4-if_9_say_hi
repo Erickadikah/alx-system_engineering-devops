@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#this bash script prints 10 = best school and 1 hi
+while [ "$counter" -gt 10 ];
+do
+	if [ "$counter" = 9 ];
+	then
+		echo 'Hi'
+	fi
+	echo "$counter" 'Best School'
+	((counter++))
+done
