@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 #this bash script prints 10 = best school and 1 hi
-until [ "counter"-gt 10 ];
+i=10
+until ((i<1))
 do
-	echo 'Best School'
-	((counter++))
+	echo "Best School"
+	((i--))
 done

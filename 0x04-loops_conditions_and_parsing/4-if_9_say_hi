@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
 #this bash script prints 10 = best school and 1 hi
-while [ "$counter" -gt 10 ];
+i=0
+while ((i < 11))
 do
-	if [ "$counter" = 9 ];
+	if ((i == 9));
 	then
-		echo 'Hi'
+		echo "Hi"
+	elif ((i != 9));
+	then
+		echo "Best School"
 	fi
-	echo "$counter" 'Best School'
-	((counter++))
+	((i++))
 done
