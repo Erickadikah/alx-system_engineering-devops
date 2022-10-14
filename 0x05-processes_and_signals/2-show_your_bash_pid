@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#thsi bash script displays the lines containing the bashword
+#show us your Bash
+ps -aux | grep bash
