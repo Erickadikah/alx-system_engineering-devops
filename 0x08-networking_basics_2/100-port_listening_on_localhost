@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+#listens to port 98 using telnet.
