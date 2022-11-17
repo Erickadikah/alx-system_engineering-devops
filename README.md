@@ -1,7 +1,7 @@
 <h2>System engineering & DevOps</h2>
 <h3>System engineering & DevOps - Bash</h3>
 <li>0x00. Shell, basics</li>
-<li>0x01. Shell, permissions<li>
+<li>0x01. Shell, permissions</li>
 <li>0x02. Shell, I/O Redirections and filters</li>
 <li>0x03. Shell, init files, variables and expansions</li>
 <li>0x04. Loops, conditions and parsing</li>
