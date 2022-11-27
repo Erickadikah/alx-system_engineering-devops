@@ -14,4 +14,3 @@
 <h2>Technical Writing and Networking</h2>
 <li> Professional Relationships </li>
 <li> Professional Social Presence</li>
-<li>By Erick adikah</li>
