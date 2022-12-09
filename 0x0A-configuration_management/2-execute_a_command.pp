@@ -1,4 +1,4 @@
-# a manifest that kills 'killmenow'
+# manifest that kills killmenow
 
 exec {'pkill':
   command   => 'pkill killmenow',
