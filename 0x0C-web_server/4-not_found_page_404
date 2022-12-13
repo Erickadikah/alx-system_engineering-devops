@@ -28,7 +28,7 @@ new_config=\
 	}
 }
 "
-echo "Ceci n'est pas une page" | sudo tee //var/www/html/404.html
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
 echo "$new_config" > /etc/nginx/sites-available/default
 
 if [ "$(pgrep -c nginx)" -le 0 ]; then
