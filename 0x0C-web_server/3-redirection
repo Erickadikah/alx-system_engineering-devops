@@ -7,7 +7,7 @@ mkdir -p /var/www/html/
 sudo chmod -R 755 /var/www
 echo 'Hello World!' > /var/www/html/index.html
 SERVER_CONFIG=\
-server {
+"server {
 	listen 80 default_server;
 	listen [::]:80 default_server;
 	root /var/www/html;
@@ -19,7 +19,7 @@ server {
 	if (\$request_filename ~ redirect_me){
 		rewrite ^ https://sketchfab.com/bluepeno/models permanent;
 	}
-}
+}"
 
 bash -c "echo -e '$SERVER_CONFIG' > /etc/nginx/sites-enabled/default"
 
