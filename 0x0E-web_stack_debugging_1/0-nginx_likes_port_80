@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Configures a server to listen on a particular port [Port 80]
+#configuring nginx to run and listen toport 80
+sed -i "s/8080/80/g" /etc/nginx/sites-enabled/default
+sudo service nginx restart
