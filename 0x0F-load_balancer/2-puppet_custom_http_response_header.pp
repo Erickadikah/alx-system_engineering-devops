@@ -1,44 +1,21 @@
-# Automate creating a custom HTTP header response, but with Puppet:
+# Script to install nginx using puppet
 
-# Pupper manifet to install nginx and others requirements
-
-$link = 'https://www.youtube.com/watch?v=QH2-TGUlwu4'
-$redirect = "\trewrite ^/redirect_me/$ ${link} permanent;"
-$custom_header = "add_header X-Served-By ${hostname};"
-
-exec { 'update packages':
-  command => '/usr/bin/apt-get update',
-}
-
-exec { 'restart nginx':
-  command => '/usr/sbin/service nginx restart',
-  require => Package['nginx']
-}
-
--> package { 'nginx':
-  ensure  => installed,
-  require => Exec['update packages']
-}
-
--> file_line { 'Add redirection, 301':
+package {'nginx':
   ensure => 'present',
-  path   => '/etc/nginx/sites-available/default',
-  after  => 'listen 80 default_server;',
-  line   => '$redirect',
 }
 
--> file_line { 'Set X-Served-By header':
-  ensure => 'present',
-  path   => '/etc/nginx/sites-available/default',
-  after  => 'listen 80 default_server;',
-  line   => $custom_header,
+exec {'install':
+  command  => 'sudo apt update -y';'sudo apt -y install nginx',
+  provider => shell,
+
 }
 
--> file { '/var/www/html/index.html':
-  ensure  => 'present',
-  content => 'Hello World!',
+exec {'replace':
+  command  => 'sudo sed -i "s/server_name _;/server_name _;\n\n\tadd_header X-Served-By \$hostname;\n/" /etc/nginx/sites-enabled/default',
+  provider => shell,
 }
--> service { 'nginx':
-  ensure  => running,
-  require => Package['nginx'],
+
+exec {'run':
+  command  => 'sudo service nginx restart',
+  provider => shell,
 }
