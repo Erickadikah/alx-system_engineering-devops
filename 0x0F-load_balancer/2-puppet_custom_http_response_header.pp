@@ -1,21 +1,9 @@
-# Script to install nginx using puppet
+#automation creation of HTTP header response with puppet
 
-package {'nginx':
-  ensure => 'present',
-}
-
-exec {'install':
-  command  => 'sudo apt update -y';'sudo apt -y install nginx',
-  provider => shell,
-
-}
-
-exec {'replace':
-  command  => 'sudo sed -i "s/server_name _;/server_name _;\n\n\tadd_header X-Served-By \$hostname;\n/" /etc/nginx/sites-enabled/default',
-  provider => shell,
-}
-
-exec {'run':
-  command  => 'sudo service nginx restart',
+exec { 'http header':
+  command  => 'apt-get update -y;
+  apt-get install nginx -y;
+  sed -i "/listen 80 default_server;/a add_header X-Served-By $HOSTNAME;" /etc/nginx/sites-available/default;
+  service nginx restart;',
   provider => shell,
 }
