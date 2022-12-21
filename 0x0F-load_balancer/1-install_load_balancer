@@ -1,40 +1,11 @@
 #!/usr/bin/env bash
-# Configures load balancer
-
-# Update package repository
-sudo apt-get update
-
-# Add HAProxy PPA
-sudo apt install -y software-properties-common
-sudo add-apt-repository -y ppa:vbernat/haproxy
-sudo apt-get update
-
-# Install HAproxy
-sudo apt-get install haproxy
-
-#Enables the HAproxy service to be managed via the init script
-# echo "ENABLED=1" >> /etc/default/haproxy
-# rename the .cfg file
-sudo mv /etc/haproxy/haproxy.cfg{,.original}
-# Creates an empty .cfg file
-sudo touch /etc/haproxy/haproxy.cfg
-
-echo "defaults
-    log     global
-    mode    http
-    option  httplog
-
-frontend web-servers
-    bind *:80
-    default_backend app-servers
-
-backend app-servers
-    balance roundrobin
-    server 61466-web-01 54.90.55.176:80 check
-    server 61466-web-02 54.144.155.28:80 check" >> /etc/haproxy/haproxy.cfg
-
-# Enable HAproxy to be managed via an init script
-systemctl enable haproxy
-
-# Start the HAproxy service
-systemctl start haproxy
+# Install your load balancer
+sudo add-apt-repository -y ppa:vbernat/haproxy-2.0
+sudo apt update
+sudo apt install -y haproxy
+sudo sed -i "7i\ ENABLED=1" "/etc/default/haproxy"
+sudo cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.orig
+CONFIG="frontend http_front\n\tbind *:80\n\tstats uri /haproxy?stats\n\tdefault_backend http_back\n\nbackend http_back\n\tbalance roundrobin\n\tserver 60552-web-01 34.201.174.39:80 check\n\tserver 60552-web-02 18.215.160.48:80 check\n"
+FILE="/etc/haproxy/haproxy.cfg"
+sudo sed -i "35i\ $CONFIG" "$FILE"
+service haproxy restart
