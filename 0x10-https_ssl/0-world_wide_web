@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 # my subdomains information
+# www --> 35.175.135.18
+# web-01 --> 54.89.21.208
+# web-02 --> 35.153.194.6
 display_info ()
 {
     domain="$1"
