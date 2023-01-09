@@ -1,16 +1,21 @@
-<h2>System engineering & DevOps</h2>
-<h3>System engineering & DevOps - Bash</h3>
-<li>0x00. Shell, basics</li>
-<li>0x01. Shell, permissions</li>
-<li>0x02. Shell, I/O Redirections and filters</li>
-<li>0x03. Shell, init files, variables and expansions</li>
-<li>0x04. Loops, conditions and parsing</li>
-<li>0x05. Processes and signals</li>
-<h3>System engineering & DevOps - Scripting</h3>
-<li> 0x06. Regular expression</li>
-<h3>System engineering & DevOps - Networking</h3>
-<li> 0x07. Networking basics #0</li>
-<li> 0x08. Networking basics #1</li>
-<h2>Technical Writing and Networking</h2>
-<li> Professional Relationships </li>
-<li> Professional Social Presence</li>
+# System engineering & DevOps Track
+* [0x00. Shell, basics](alx-system_engineering-devops)
+* [0x01. Shell, permissions](alx-system_engineering-devops)
+* [0x02. Shell, I/O Redirections and filters](alx-system_engineering-devops)
+* [0x03. Shell, init files, variables and expansions](alx-system_engineering-devops)
+* [0x04. Loops, conditions and parsing](alx-system_engineering-devops)
+* [0x05. Processes and signals](alx-system_engineering-devops)
+* [0x06. Regular expression](alx-system_engineering-devops)
+* [0x07. Networking basics #0](alx-system_engineering-devops)
+* [0x08. Networking basics #1](alx-system_engineering-devops)
+* [0x09. Web infrastructure design](alx-system_engineering-devops)
+* [0x0A. Configuration management](alx-system_engineering-devops)
+* [0x0B. SSH](alx-system_engineering-devops)
+* [0x0C. Web server](alx-system_engineering-devops)
+* [0x0D. Web stack debugging #0](alx-system_engineering-devops)
+* [0x0E. Web stack debugging #1](alx-system_engineering-devops)
+* [0x0F. Load balancer](alx-system_engineering-devops)
+* [0x10. HTTPS SSL](alx-system_engineering-devops)
+* [0x11. What happens when you type google.com in your browser and press Enter](alx-system_engineering-devops)
+* [0x13. Firewall](alx-system_engineering-devops)
+* [Command line for the win](alx-system_engineering-devops)
