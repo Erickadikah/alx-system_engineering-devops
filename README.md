@@ -1,5 +1,6 @@
 # System engineering & DevOps Track
-* [0x00. Shell, basics](alx-system_engineering-devops)
+* [0x00. Shell, basics](./https://github.com/Erickadikah/alx-system_engineering-devops/alx-system_engineering-devops/0x00-shell_basics
+)
 * [0x01. Shell, permissions](alx-system_engineering-devops)
 * [0x02. Shell, I/O Redirections and filters](alx-system_engineering-devops)
 * [0x03. Shell, init files, variables and expansions](alx-system_engineering-devops)
