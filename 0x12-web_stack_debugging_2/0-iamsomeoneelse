@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# running whaomi commad under user passed as first argument
+su "$1" -s /bin/bash -c 'whoami'
