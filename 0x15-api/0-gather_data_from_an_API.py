@@ -8,7 +8,9 @@ import json
 from sys import argv
 import requests
 
+
 API = "https://jsonplaceholder.typicode.com"
+"""REST API url"""
 
 
 if __name__ == "__main__":
