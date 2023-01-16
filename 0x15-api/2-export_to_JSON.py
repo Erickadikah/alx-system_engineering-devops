@@ -7,6 +7,7 @@ Implemented using recursion
 import re
 import requests
 import sys
+import json
 
 
 API = "https://jsonplaceholder.typicode.com"
@@ -21,9 +22,16 @@ if __name__ == "__main__":
             todos_res = requests.get('{}/todos'.format(API)).json()
             user_name = user_res.get('name')
             todos = list(filter(lambda x: x.get('userId') == id, todos_res))
-            with open('{}.csv'.format(id), 'w') as file:
-                for todo in todos:
-                    file.write('"{}", "{}", "{}","{}"\n'.format(
-                        id,
-                        user_name,
-                        todo.get('completed'), todo.get('title')))
+            with open("{}.json".format(id), 'w') as json_file:
+                user_data = list(map(
+                    lambda x: {
+                        "task": x.get("title"),
+                        "completed": x.get("completed"),
+                        "username": user_name
+                    },
+                    todos
+                ))
+                user_data = {
+                    "{}".format(id): user_data
+                }
+                json.dump(user_data, json_file)
