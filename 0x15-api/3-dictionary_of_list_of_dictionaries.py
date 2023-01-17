@@ -4,8 +4,8 @@ Using https://jsonplaceholder.typicode.com
 returns info about employee TODO progress
 Implemented using recursion
 """
-import requests
 import json
+import requests
 
 
 API = "https://jsonplaceholder.typicode.com"
