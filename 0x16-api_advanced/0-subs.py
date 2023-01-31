@@ -5,6 +5,7 @@
 import requests
 from sys import argv
 
+
 def number_of_subscribers(subreddit):
     url = f"https://www.reddit.com/r/{subreddit}/about.json"
     headers = {
