@@ -3,18 +3,13 @@
 """
 
 import requests
-from sys import argv
-
 
 def number_of_subscribers(subreddit):
-    url = f"https://www.reddit.com/r/{subreddit}/about.json"
+    url = "https://api.reddit.com"
     headers = {
         "User-Agent": "My Reddit API Client/1.0"
     }
-    response = requests.get(url, headers=headers)
-    if response.status_code == 200:
-        data = response.json()
-        subscribers = data["data"]["subscribers"]
-        return subscribers
-    else:
+    res = requests.get("{}/r/{}/about".format(url, subreddit), headers=headers)
+    if res.status_code == 404:
         return 0
+    return res.json().get('data').get('subscribers')
