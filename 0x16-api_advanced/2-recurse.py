@@ -3,6 +3,7 @@
 
 import requests
 
+
 def recurse(subreddit, hot_list=[], after="", count=0):
     """Return titles of all hot articles recursive function way a subreddit"""
     url = 'https://api.reddit.com'
@@ -14,7 +15,7 @@ def recurse(subreddit, hot_list=[], after="", count=0):
         "count": count
     }
     res = requests.get("{}/r/{}/hot".format(url, subreddit),
-            headers=headers, params=params)
+                       headers=headers, params=params)
     if res.status_code == 404:
         return None
     data = res.json().get('data')
@@ -23,7 +24,7 @@ def recurse(subreddit, hot_list=[], after="", count=0):
     children = data.get('children')
     for child in children:
         hot_list.append(child.get('data').get('title'))
-    
+
     if after is not None:
         recurse(subreddit, hot_list, after, count)
 
