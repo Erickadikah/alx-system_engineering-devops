@@ -1,6 +1,11 @@
 # System engineering & DevOps Track
 
 [![GitHub stars](https://img.shields.io/github/stars/your-username/your-repository-name.svg)](https://github.com/your-username/your-repository-name/stargazers)
+![Directory count](https://img.shields.io/badge/directories-10-brightgreen)
+![Repository size](https://img.shields.io/badge/repo%20size-100MB-blue)
+![Lines of code](https://img.shields.io/badge/lines%20of%20code-5000-orange)
+![Commit activity](https://img.shields.io/badge/commit%20activity-10%20commits%20in%20the%20last%20week-brightgreen)
+![Last commit](https://img.shields.io/badge/last%20commit-March%2031%2C%202023-blue)
 - Directory count: 10
 - Repository size: 100MB
 - Lines of code: 5000
