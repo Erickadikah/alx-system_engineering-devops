@@ -1,6 +1,6 @@
 # System engineering & DevOps Track
 
-- Code size: 50KB
+[![GitHub stars](https://img.shields.io/github/stars/your-username/your-repository-name.svg)](https://github.com/your-username/your-repository-name/stargazers)
 - Directory count: 10
 - Repository size: 100MB
 - Lines of code: 5000
