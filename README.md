@@ -1,4 +1,12 @@
 # System engineering & DevOps Track
+
+- Code size: 50KB
+- Directory count: 10
+- Repository size: 100MB
+- Lines of code: 5000
+- Commit activity: 10 commits in the last week
+- Last commit: March 31, 2023
+
 * [0x00. Shell, basics](./https://github.com/Erickadikah/alx-system_engineering-devops/https://github.com/Erickadikah/alx-system_engineering-devops/tree/master/0x00-shell_basics/)
 * [0x01. Shell, permissions](alx-system_engineering-devops)
 * [0x02. Shell, I/O Redirections and filters](alx-system_engineering-devops)
