@@ -6,11 +6,14 @@
 ![Lines of code](https://img.shields.io/badge/lines%20of%20code-5000-orange)
 ![Commit activity](https://img.shields.io/badge/commit%20activity-10%20commits%20in%20the%20last%20week-brightgreen)
 ![Last commit](https://img.shields.io/badge/last%20commit-March%2031%2C%202023-blue)
-- Directory count: 10
-- Repository size: 100MB
-- Lines of code: 5000
-- Commit activity: 10 commits in the last week
-- Last commit: March 31, 2023
+
+
+![Linux](https://img.shields.io/badge/Linux-OS-red)
+![Bash](https://img.shields.io/badge/Bash-Scripting-orange)
+![Shell](https://img.shields.io/badge/Shell-Scripting-blue)
+![SSH](https://img.shields.io/badge/SSH-Remote%20Access-green)
+![DevOps](https://img.shields.io/badge/DevOps-Methodology-blueviolet)
+![Server](https://img.shields.io/badge/Server-Administration-yellow)
 
 * [0x00. Shell, basics](./https://github.com/Erickadikah/alx-system_engineering-devops/https://github.com/Erickadikah/alx-system_engineering-devops/tree/master/0x00-shell_basics/)
 * [0x01. Shell, permissions](alx-system_engineering-devops)
